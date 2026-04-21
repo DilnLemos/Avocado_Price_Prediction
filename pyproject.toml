@@ -1,0 +1,32 @@
+[project]
+name = "avocado-prices"
+version = "0.1.0"
+description = "Predicción de precios de aguacate - Ciencia de Datos"
+requires-python = ">=3.10"
+
+dependencies = [
+    # Core de datos
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    # Kaggle
+    "kagglehub[pandas-datasets]>=0.3.0",
+    # Visualización (Fase 1)
+    "matplotlib>=3.9.0",
+    "matplotlib-inline>=0.1.7",
+    "seaborn>=0.13.0",
+    # Machine Learning (Fase 3)
+    "scikit-learn>=1.4.0",
+    # Redes Neuronales (Fase 3)
+    "tensorflow>=2.16.0",      # o torch si prefieren PyTorch
+    # Notebooks
+    "jupyterlab>=4.1.0",
+    "ipykernel>=6.29.0",
+    # Utilidades
+    "openpyxl>=3.1.0",         # leer excel si hace falta
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.0.0",           # formateo de código
+    "ruff>=0.4.0",             # linter
+]
