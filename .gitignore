@@ -1,0 +1,229 @@
+# ============================================================
+# .gitignore — Proyecto Ciencia de Datos (Aguacate Prices)
+# ============================================================
+
+
+# ------------------------------------------------------------
+# DATOS
+# ------------------------------------------------------------
+data/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+
+
+# ------------------------------------------------------------
+# MODELOS ENTRENADOS
+# ------------------------------------------------------------
+models/
+*.joblib
+*.sav
+*.pt
+*.pth
+*.onnx
+
+
+# ------------------------------------------------------------
+# PYTHON
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Entornos virtuales
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+*.whl
+MANIFEST
+
+# Instalaciones locales de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.coveragerc
+nosetests.xml
+
+# mypy / linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pylint.d/
+
+# Profiling
+*.prof
+
+
+# ------------------------------------------------------------
+# JUPYTER NOTEBOOKS
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# Outputs de notebooks (mantén el código, no los outputs grandes)
+# Descomenta si quieres ignorar outputs embebidos:
+# *.ipynb
+
+
+# ------------------------------------------------------------
+# VARIABLES DE ENTORNO Y SECRETOS
+# ------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+secrets.yaml
+secrets.yml
+config/secrets.*
+credentials.json
+token.json
+
+
+# ------------------------------------------------------------
+# IDEs — VS CODE
+# ------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+
+# ------------------------------------------------------------
+# IDEs — PYCHARM / JETBRAINS
+# ------------------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+
+# ------------------------------------------------------------
+# IDEs — SPYDER
+# ------------------------------------------------------------
+.spyderproject.db
+.spyproject/
+.spyderworkspace
+
+
+# ------------------------------------------------------------
+# IDEs — JUPYTER LAB
+# ------------------------------------------------------------
+.jupyter/
+.local/
+
+
+# ------------------------------------------------------------
+# IDEs — ECLIPSE
+# ------------------------------------------------------------
+.project
+.pydevproject
+.settings/
+.classpath
+
+
+# ------------------------------------------------------------
+# SISTEMA OPERATIVO — WINDOWS
+# ------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+
+# ------------------------------------------------------------
+# SISTEMA OPERATIVO — MACOS
+# ------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+
+# ------------------------------------------------------------
+# SISTEMA OPERATIVO — LINUX
+# ------------------------------------------------------------
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ------------------------------------------------------------
+# LOGS Y TEMPORALES
+# ------------------------------------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+
+# ------------------------------------------------------------
+# REPORTES Y OUTPUTS GENERADOS
+# ------------------------------------------------------------
+reports/figures/
+outputs/
+*.html
+!README*.html
+
+
+# ------------------------------------------------------------
+# DEPENDENCIAS / GESTORES DE PAQUETES
+# ------------------------------------------------------------
+# Conda
+.conda/
+*.conda
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
